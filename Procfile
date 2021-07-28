@@ -1,1 +1,1 @@
-web: gunicorn Yashtips.com.wsgi
+web:gunicorn Yashtips.com.wsgi
