@@ -7,7 +7,7 @@ client = discord.Client()
 
 def get_question():
     qs = ''
-    id=1
+    id = 1
     answer = 0
     response = requests.get("https://pacific-ridge-92120.herokuapp.com/api/random/")
     json_data = json.loads(response.text)
