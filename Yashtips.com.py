@@ -30,13 +30,11 @@ async def on_message(message):
     if message.author == client.user:
         return
 
-    if message.content.startswith('$hello'):
-        await message.channel.send('Hello!')
+    study = ['study', 'Study']
 
-@client.event
-async def on_message(message):
-    if message.author == client.user:
-        return
+    if any(word in msg for word in study):
+        await message.channel.send('lmao imagine studying')
+
     if message.content.startswith('$question'):
         qs, answer = get_question()
         await message.channel.send(qs)
