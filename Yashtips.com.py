@@ -32,6 +32,8 @@ async def on_message(message):
 
     study = ['study', 'Study']
 
+    msg = message.content
+
     if any(word in msg for word in study):
         await message.channel.send('lmao imagine studying')
 
