@@ -34,9 +34,6 @@ async def on_message(message):
 
     msg = message.content
 
-    if any(word in msg for word in study):
-        await message.channel.send('lmao imagine studying')
-
     if message.content.startswith('$question'):
         qs, answer = get_question()
         await message.channel.send(qs)
@@ -46,10 +43,10 @@ async def on_message(message):
         try:
             guess = await client.wait_for('message', check=check, timeout=10.0)
         except asyncio.TimeoutError:
-            return await message.channel.send('too late you slow ass mf')
+            return await message.channel.send('too late')
         if int(guess.content) == answer:
             await message.channel.send("That's right")
         else:
-            await message.channel.send('Wrong, dumbass')
+            await message.channel.send('Wrong')
 
 client.run('ODQyNTMzNDA3OTMwMzE4OTA5.YJ2sYQ.WmGSQlL-hB1Iz4BpmqwlJge77Tk')
