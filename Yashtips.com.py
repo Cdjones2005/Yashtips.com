@@ -49,4 +49,4 @@ async def on_message(message):
         else:
             await message.channel.send('Wrong')
 
-client.run('ODQyNTMzNDA3OTMwMzE4OTA5.YJ2sYQ.WmGSQlL-hB1Iz4BpmqwlJge77Tk')
+client.run('ODQyNTMzNDA3OTMwMzE4OTA5.G1-FMd.pLifneAihhXnba3CbzZYAmd2HNLmiBxokZEyjU')
